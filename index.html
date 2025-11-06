@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aurora UI — Northern Lights for Your Product</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <a href="#" class="brand">
+          <span class="brand-icon" aria-hidden="true">✶</span>
+          <span class="brand-name">Aurora UI</span>
+        </a>
+        <nav class="primary-nav" aria-label="Primary">
+          <a href="#features">Features</a>
+          <a href="#showcase">Showcase</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#cta" class="btn btn--ghost">Try Demo</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="hero">
+        <div class="container">
+          <div class="hero__content">
+            <p class="eyebrow">Introducing Aurora UI</p>
+            <h1>Design northern-light experiences without the chill.</h1>
+            <p class="lead">
+              Build immersive product surfaces inspired by shimmering auroras.
+              Composable components, responsive layouts, and gradient-rich
+              themes that make your app glow.
+            </p>
+            <div class="hero__actions">
+              <a href="#cta" class="btn btn--primary">Get Started</a>
+              <a href="#showcase" class="btn btn--ghost">See Aurora in action</a>
+            </div>
+            <div class="hero__metrics" role="list">
+              <div class="metric" role="listitem">
+                <span class="metric__value">24k+</span>
+                <span class="metric__label">Designers onboard</span>
+              </div>
+              <div class="metric" role="listitem">
+                <span class="metric__value">142%</span>
+                <span class="metric__label">Increase in conversion</span>
+              </div>
+              <div class="metric" role="listitem">
+                <span class="metric__value">48hr</span>
+                <span class="metric__label">Average build time</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero__visual" aria-hidden="true">
+            <div class="aurora-ring"></div>
+            <div class="aurora-ring aurora-ring--secondary"></div>
+            <div class="aurora-card">
+              <p class="aurora-card__title">Aurora Scenes</p>
+              <div class="aurora-card__gradient"></div>
+              <div class="aurora-card__meta">
+                <span>Live mode</span>
+                <span>Blend: Prism</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pillars" id="features">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Why Aurora</p>
+            <h2>Illuminate your product surface.</h2>
+            <p>
+              Aurora UI uses a gradient-first design language and a
+              meticulously tuned component kit so every interface feels alive.
+            </p>
+          </div>
+          <div class="grid">
+            <article class="pillar">
+              <span class="pillar__icon">🌌</span>
+              <h3>Prismatic components</h3>
+              <p>
+                Choose from layers of panels, cards, and overlays featuring
+                customizable aurora washes powered by CSS custom properties.
+              </p>
+            </article>
+            <article class="pillar">
+              <span class="pillar__icon">🎚️</span>
+              <h3>Fine-grained controls</h3>
+              <p>
+                Dial in warmth, luminance, and glow intensity to match your
+                brand. Theme tokens ensure consistent experiences everywhere.
+              </p>
+            </article>
+            <article class="pillar">
+              <span class="pillar__icon">⚡</span>
+              <h3>Snappy performance</h3>
+              <p>
+                Built with modern CSS architecture and minimal dependencies to
+                keep interactions smooth and responsive.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="showcase" id="showcase">
+        <div class="container">
+          <div class="showcase__content">
+            <h2>Mix and match aurora scenes.</h2>
+            <p>
+              Pair gradient overlays with typographic scales and dynamic glass
+              panels. Create ambient dashboards, hero surfaces, or onboarding
+              flows that feel alive.
+            </p>
+            <div class="tag-cloud">
+              <span>Glassmorphism</span>
+              <span>Neon Blur</span>
+              <span>Pulse</span>
+              <span>Crystalline</span>
+              <span>Polar Dawn</span>
+              <span>Prism Drift</span>
+            </div>
+          </div>
+          <div class="showcase__panel" aria-hidden="true">
+            <div class="panel__glow"></div>
+            <div class="panel__inner">
+              <p class="panel__label">Aurora Layout Preview</p>
+              <div class="panel__stack">
+                <div class="panel__tile panel__tile--one"></div>
+                <div class="panel__tile panel__tile--two"></div>
+                <div class="panel__tile panel__tile--three"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pricing" id="pricing">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Flexible plans</p>
+            <h2>Pick the glow that fits your product.</h2>
+          </div>
+          <div class="pricing__grid">
+            <article class="plan">
+              <p class="plan__name">Starter</p>
+              <p class="plan__price">$29<span>/month</span></p>
+              <ul>
+                <li>Core component set</li>
+                <li>Two gradient palettes</li>
+                <li>Community support</li>
+              </ul>
+              <a href="#cta" class="btn btn--ghost">Start free trial</a>
+            </article>
+            <article class="plan plan--featured">
+              <p class="plan__name">Creator</p>
+              <p class="plan__price">$79<span>/month</span></p>
+              <ul>
+                <li>Full Aurora library</li>
+                <li>Advanced animation presets</li>
+                <li>Theme tokens API</li>
+              </ul>
+              <a href="#cta" class="btn btn--primary">Choose Creator</a>
+              <p class="plan__note">Most popular</p>
+            </article>
+            <article class="plan">
+              <p class="plan__name">Studio</p>
+              <p class="plan__price">$149<span>/month</span></p>
+              <ul>
+                <li>Unlimited seats</li>
+                <li>Dedicated onboarding</li>
+                <li>Custom glow systems</li>
+              </ul>
+              <a href="#cta" class="btn btn--ghost">Book a call</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta" id="cta">
+        <div class="container">
+          <div class="cta__content">
+            <h2>Ready to glow?</h2>
+            <p>
+              Ship a striking landing page in minutes with Aurora UI. Layer in
+              glowing gradients and shimmering interfaces across every screen.
+            </p>
+          </div>
+          <form class="cta__form">
+            <label class="sr-only" for="email">Email address</label>
+            <input id="email" type="email" name="email" placeholder="you@studio.com" required />
+            <button type="submit" class="btn btn--primary">Request access</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Aurora UI. Crafted in polar light.</p>
+        <div class="footer-links">
+          <a href="#hero">Overview</a>
+          <a href="#features">Features</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#cta">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const yearEl = document.getElementById("year");
+      if (yearEl) {
+        yearEl.textContent = new Date().getFullYear();
+      }
+    </script>
+  </body>
+</html>
