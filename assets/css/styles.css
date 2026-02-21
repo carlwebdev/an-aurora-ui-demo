@@ -598,9 +598,94 @@ p {
   border: 0;
 }
 
+.styleguide-main {
+  padding-bottom: 2rem;
+}
+
+.styleguide-hero {
+  padding: clamp(4rem, 7vw, 6rem) 0 2rem;
+}
+
+.styleguide-hero .lead {
+  max-width: 40rem;
+}
+
+.styleguide-section {
+  padding: 2rem 0;
+}
+
+.swatch-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.swatch-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(118, 249, 255, 0.14);
+  border-radius: var(--radius-md);
+  padding: 1rem;
+  box-shadow: var(--shadow-soft);
+}
+
+.swatch-card p {
+  margin: 0.7rem 0 0.2rem;
+  color: var(--color-text-primary);
+  font-weight: 600;
+}
+
+.swatch-card small {
+  color: var(--color-text-secondary);
+}
+
+.swatch {
+  height: 88px;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.swatch--bg {
+  background: var(--color-bg);
+}
+
+.swatch--surface {
+  background: var(--color-surface-strong);
+}
+
+.swatch--accent {
+  background: var(--color-accent);
+}
+
+.swatch--cta {
+  background: var(--color-cta);
+}
+
+.styleguide-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.styleguide-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(118, 249, 255, 0.14);
+  border-radius: var(--radius-md);
+  padding: 1.4rem;
+  box-shadow: var(--shadow-soft);
+}
+
+.styleguide-card--strong {
+  background: rgba(12, 18, 45, 0.85);
+  border-color: rgba(118, 249, 255, 0.3);
+}
+
 @media (max-width: 640px) {
   html {
     scroll-padding-top: 5.5rem;
+  }
+
+  .container {
+    width: min(1120px, calc(100vw - 3.5rem));
   }
 
   .menu-toggle {

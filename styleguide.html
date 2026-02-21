@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aurora UI — Styleguide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <a href="index.html" class="brand">
+          <span class="brand-icon" aria-hidden="true">✶</span>
+          <span class="brand-name">Aurora UI</span>
+        </a>
+        <nav class="primary-nav" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="#colors">Colors</a>
+          <a href="#typography">Typography</a>
+          <a href="#cards">Cards</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="styleguide-main">
+      <section class="styleguide-hero" id="top">
+        <div class="container">
+          <p class="eyebrow">Styleguide</p>
+          <h1>Aurora UI basics</h1>
+          <p class="lead">
+            A lightweight reference for the core visual system: color palette,
+            typography scale, and card treatment.
+          </p>
+        </div>
+      </section>
+
+      <section class="styleguide-section" id="colors">
+        <div class="container">
+          <h2>Colors</h2>
+          <div class="swatch-grid">
+            <article class="swatch-card">
+              <div class="swatch swatch--bg"></div>
+              <p>Background</p>
+              <small>#050917</small>
+            </article>
+            <article class="swatch-card">
+              <div class="swatch swatch--surface"></div>
+              <p>Surface</p>
+              <small>rgba(14, 21, 50, 0.7)</small>
+            </article>
+            <article class="swatch-card">
+              <div class="swatch swatch--accent"></div>
+              <p>Accent</p>
+              <small>#76f9ff</small>
+            </article>
+            <article class="swatch-card">
+              <div class="swatch swatch--cta"></div>
+              <p>CTA</p>
+              <small>#b47aff</small>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="styleguide-section" id="typography">
+        <div class="container">
+          <h2>Typography</h2>
+          <div class="styleguide-card">
+            <h1>Heading 1 — Aurora Experience</h1>
+            <h2>Heading 2 — Section Title</h2>
+            <h3>Heading 3 — Component Title</h3>
+            <p>
+              Body text uses Inter and is optimized for readability across glass
+              and dark surface treatments.
+            </p>
+            <p class="eyebrow">Eyebrow label</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="styleguide-section" id="cards">
+        <div class="container">
+          <h2>Box card treatment</h2>
+          <div class="styleguide-card-grid">
+            <article class="styleguide-card">
+              <h3>Default card</h3>
+              <p>
+                Soft border, subtle blur, and elevated shadow for layered depth.
+              </p>
+            </article>
+            <article class="styleguide-card styleguide-card--strong">
+              <h3>Featured card</h3>
+              <p>
+                Stronger contrast and accent border for priority content blocks.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Aurora UI. Crafted in polar light.</p>
+        <div class="footer-links">
+          <a href="index.html">Overview</a>
+          <a href="styleguide.html">Styleguide</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const yearEl = document.getElementById("year");
+      if (yearEl) {
+        yearEl.textContent = new Date().getFullYear();
+      }
+    </script>
+  </body>
+</html>
