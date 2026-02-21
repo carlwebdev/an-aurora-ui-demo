@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
     <header class="site-header">
@@ -19,7 +19,16 @@
           <span class="brand-icon" aria-hidden="true">✶</span>
           <span class="brand-name">Aurora UI</span>
         </a>
-        <nav class="primary-nav" aria-label="Primary">
+        <button
+          type="button"
+          class="menu-toggle"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+          aria-label="Toggle navigation menu"
+        >
+          <span aria-hidden="true">☰</span>
+        </button>
+        <nav class="primary-nav" id="primary-nav" aria-label="Primary">
           <a href="#features">Features</a>
           <a href="#showcase">Showcase</a>
           <a href="#pricing">Pricing</a>
@@ -220,6 +229,31 @@
       const yearEl = document.getElementById("year");
       if (yearEl) {
         yearEl.textContent = new Date().getFullYear();
+      }
+
+      const menuToggle = document.querySelector(".menu-toggle");
+      const primaryNav = document.getElementById("primary-nav");
+
+      if (menuToggle && primaryNav) {
+        const closeMenu = () => {
+          menuToggle.setAttribute("aria-expanded", "false");
+          primaryNav.classList.remove("is-open");
+        };
+
+        menuToggle.addEventListener("click", () => {
+          const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
+          if (isOpen) {
+            closeMenu();
+            return;
+          }
+
+          menuToggle.setAttribute("aria-expanded", "true");
+          primaryNav.classList.add("is-open");
+        });
+
+        primaryNav.querySelectorAll("a").forEach((link) => {
+          link.addEventListener("click", closeMenu);
+        });
       }
     </script>
   </body>
